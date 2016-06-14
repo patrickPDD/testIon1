@@ -12,30 +12,25 @@ app.controller('recentVersions', ['$scope', '$http', function ($scope, $http) {
         console.log("this happened: " + choice);
         $scope.message = "";
 
-            if (choice !== "") {
                 $http({
                     method: 'GET',
+                    dataType: 'jsonp',
                     url: 'https://libraries.io/api/npm/' + choice + '?api_key=' + apiKey,
                     headers: {
-                        "X-Object-Header" : "123456789",
                         "Content-Type": "application/json"
-                    },
-                    data: { test: 'test' }
+                    }
 
                 })
-                    .then(function successCallback(res) {
+                    .then(function(res) {
                         $scope.appData = res.data;
                         console.log("get happened");
                         $scope.message = "We found your app " + choice;
 
-                    }), function errorCallback(res) {
+                    }).catch (function(res) {
                     console.log("error happened");
-                    $scope.errorMessage = res.data;
-                };
-            //}
-        } else {
-            $scope.message = "We can't find the app " + choice;
-        }
+                    $scope.message = "We can't find the app " + choice;
+                    //$scope.errorMessage = res.data;
+                })
+            }
 
-    }
 }]);
