@@ -8,3 +8,9 @@ I have decided to create this application with angularJS for several reasons
 
 The angular applicaton will include an index, a displayVesions template, a displayVerssions 
 directive, controller and a service that will fetch the json file. 
+
+UPDATE
+
+This leaves a lott to be desired however this was a good exercise for me. 
+
+Note the api is reached 

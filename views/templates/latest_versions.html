@@ -4,14 +4,12 @@
     <title>Find App Versions</title>
     <link rel="stylesheet" href="../../public/css/bootstrap.css" media="screen"/>
     <link rel="stylesheet" href="../../public/css/main.css" media="screen"/>
-    <script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../public/js/angular.min.js"></script>
-    <script type="text/javascript" src="../../public/js/app.js"></script>
+
 </head>
 <body>
 <div class="container">
     <div class="row" ng-controller="recentVersions">
-
+        <div class="col-lg-4">
         <form>
 
             <input name="library" type="text" ng-model="some_value"/>
@@ -22,6 +20,9 @@
 
         <p> You chose to look up {{ some_value }} </p>
         <p>{{ message }}</p>
+
+        </div>
+        <div class="col-lg-8">
         <h1>{{ appData.name }}</h1>
         <table class="table table-hover">
             <thead>
@@ -53,7 +54,12 @@
             </tbody>
             </thead>
         </table>
+        </div>
     </div>
 </div>
 </body>
+<script type="text/javascript" src="../../public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../public/js/angular.min.js"></script>
+<script type="text/javascript" src="../../public/js/app.js"></script>
 </html>
