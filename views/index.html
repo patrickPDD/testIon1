@@ -1,0 +1,26 @@
+<html ng-app="libraryApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Find App Versions</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" media="screen" />
+    <script type="text/javascript" src="../js/json/sample.js"></script>
+    <script type="text/javascript" src="../node_modules/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+</head>
+<div ng-controller="recentVersions">
+
+<form>
+
+    <input name="library" type="text" ng-model="some_value" />
+    <input type="button" class="btn btn-default" ng-click="bringBackAppHistory(some_value)"
+           value="find versions" />
+
+</form>
+
+<p> You chose to look up {{ some_value }} </p>
+    <p>{{ message }}</p>
+
+</div>
+</html>
