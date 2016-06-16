@@ -2,16 +2,9 @@ var app = angular.module('libraryApp', []);
 
 app.controller('recentVersions', ['$scope', '$http', function ($scope, $http) {
     const apiKey = '41f16b15997ff6bf818778afd07017ad';
-    //$scope.some_data = "";
-
-    //var appData = $scope.appData;
-    //$scope.lastFive = $scope.appData.versions.slice(-5,0);
-    //console.log("appData: " + appData);
-
     $scope.bringBackAppHistory = function (choice) {
         console.log("this happened: " + choice);
         $scope.message = "";
-
                 $http({
                     method: 'GET',
                     dataType: 'jsonp',
@@ -19,11 +12,12 @@ app.controller('recentVersions', ['$scope', '$http', function ($scope, $http) {
                     headers: {
                         "Content-Type": "application/json"
                     }
-
                 })
                     .then(function(res) {
                         $scope.appData = res.data;
-                        console.log("get happened");
+                        var appData = $scope.appData;
+                        var versionsArray = appData.versions;
+                        $scope.lastfiveversions = versionsArray.reverse().slice(0,5);
                         $scope.message = "We found your app " + choice;
 
                     }).catch (function(res) {
@@ -31,6 +25,5 @@ app.controller('recentVersions', ['$scope', '$http', function ($scope, $http) {
                     $scope.message = "We can't find the app " + choice;
                     //$scope.errorMessage = res.data;
                 })
-            }
-
+            };
 }]);

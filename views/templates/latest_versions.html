@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="row" ng-controller="recentVersions">
+    <div class="tr" ng-controller="recentVersions">
         <div class="col-lg-4">
         <form>
 
@@ -24,36 +24,42 @@
         </div>
         <div class="col-lg-8">
         <h1>{{ appData.name }}</h1>
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <th>Version</th>
-                <th>Date Released</th>
-            </tr>
-            <tbody>
-            <tr>
-                <td>{{ appData.versions[0]['number'] }}</td>
-                <td>{{ appData.versions[0]['published_at'] | date : short }}</td>
-            </tr>
-            <tr>
-                <td>{{ appData.versions[1]['number'] }}</td>
-                <td>{{ appData.versions[1]['published_at'] | date : short }}</td>
-            </tr>
-            <tr>
-                <td>{{ appData.versions[2]['number'] }}</td>
-                <td>{{ appData.versions[2]['published_at'] | date : short }}</td>
-            </tr>
-            <tr>
-                <td>{{ appData.versions[3]['number'] }}</td>
-                <td>{{ appData.versions[3]['published_at'] | date : short }}</td>
-            </tr>
-            <tr>
-                <td>{{ appData.versions[4]['number'] }}</td>
-                <td>{{ appData.versions[4]['published_at'] | date : short }}</td>
-            </tr>
+            
+            <!--<ul>
+                <li ng-repeat="v in lastfiveversions">{{ v }}</li>
+
+            </ul>-->
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Date Released</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td> {{ lastfiveversions[0]["number"] }}</td>
+                    <td> {{ lastfiveversions[0]["published_at"] | date : short }}</td>
+                </tr>
+                <tr>
+                    <td> {{ lastfiveversions[1]["number"] }}</td>
+                    <td> {{ lastfiveversions[1]["published_at"]| date : short }}</td>
+                </tr>
+                <tr>
+                    <td> {{ lastfiveversions[2]["number"] }}</td>
+                    <td> {{ lastfiveversions[2]["published_at"] | date : short }}</td>
+                </tr>
+                <tr>
+                    <td> {{ lastfiveversions[3]["number"] }}</td>
+                    <td> {{ lastfiveversions[3]["published_at"] | date : short }}</td>
+                </tr>
+                <tr>
+                    <td> {{ lastfiveversions[4]["number"] }}</td>
+                    <td> {{ lastfiveversions[4]["published_at"] | date : short }}</td>
+                </tr>
             </tbody>
-            </thead>
-        </table>
+                </thead>
+            </table>
         </div>
     </div>
 </div>
