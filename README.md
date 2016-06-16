@@ -14,3 +14,14 @@ UPDATE
 This leaves a lott to be desired however this was a good exercise for me. 
 
 Note the api is reached 
+
+6/16
+
+-App now brings back versions most recent first
+-text appears when app not found
+-Table date formatted 
+
+Remaining issues
+- Table appears sans data before search is done
+- if data array less then five extra rows still show 
+- Table rows from previous search linger when new search comes back empty
