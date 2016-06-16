@@ -23,14 +23,17 @@
 
         </div>
         <div class="col-lg-8">
-        <h1>{{ appData.name }}</h1>
-            
+        <h1 ng-if="appStart">Find Latest versions of an application</h1>
+            <div ng-if="appStart === false">
+        <h1 ng-show="appData">{{ appData.name }}</h1>
+        <h1 ng-hide="appData">App {{ some_value }} not found</h1>
+            </div>
             <!--<ul>
                 <li ng-repeat="v in lastfiveversions">{{ v }}</li>
 
             </ul>-->
 
-            <table class="table table-hover">
+            <table class="table table-hover" ng-if="lastfiveversions">
                 <thead>
                 <tr>
                     <th>Version</th>
