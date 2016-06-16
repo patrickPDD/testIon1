@@ -18,12 +18,12 @@
 
         </form>
 
-        <p> You chose to look up {{ some_value }} </p>
+        <p ng-if="some_value"> You chose to look up {{ some_value }} </p>
         <p>{{ message }}</p>
 
         </div>
         <div class="col-lg-8">
-        <h1 ng-if="appStart">Find Latest versions of an application</h1>
+        <h1 ng-if="appStart">Find latest versions of an application</h1>
             <div ng-if="appStart === false">
         <h1 ng-show="appData">{{ appData.name }}</h1>
         <h1 ng-hide="appData">App {{ some_value }} not found</h1>

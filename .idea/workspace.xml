@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5b8bb71-5b4f-4426-b89d-df85e883c837" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/templates/latest_versions.html" afterPath="$PROJECT_DIR$/views/templates/latest_versions.html" />
     </list>
     <ignored path="testIon1.iws" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="latest_versions.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/templates/latest_versions.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="167">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -122,8 +121,8 @@
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/views/templates/latest_versions.html" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/views/templates/latest_versions.html" />
       </list>
     </option>
   </component>
@@ -332,12 +331,12 @@
       <workItem from="1465830259660" duration="39750000" />
       <workItem from="1465934986543" duration="633000" />
       <workItem from="1465992938695" duration="3124000" />
-      <workItem from="1466087078826" duration="4266000" />
+      <workItem from="1466087078826" duration="4922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68001000" />
+    <option name="totallyTimeSpent" value="68657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="187" y="0" width="1740" height="1167" extended-state="0" />
@@ -806,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/templates/latest_versions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="167">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           <folding />
         </state>
       </provider>
